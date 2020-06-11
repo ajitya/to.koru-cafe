@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toko.ru cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <head>
+  </head>
+  <body>
+    <div class="reservation_first">
+      <p>RESERVATION</p>
+    </div>
+    <div class="reservation_main">
+      <form action="+.html" name="reservation">
+      <p>ご予約希望日</p>
+      <p><span>〇⽉〇⽇</span></p>
+      <p>ご希望時間帯</p>
+      <p><span>00:00~</span></p>
+      <p>お名前</p>
+      <input type="text" name="name" size="40" maxlength="20">
+      <p>電話番号</p>
+      <input type="tel"　name="tel">
+      <p>人数</p>
+      <input type="number"　name="people">
+      <p>ご希望の座席</p>
+      <div class="seat_map">
+      <a id="a1" href="" onClick="seatSelect1();"><input type="radio" name="seat" value="1"></a>
+      <a id="a2" href="" onClick="seatSelect2();"><input type="radio" name="seat" value="2"></a>
+      <a id="a3" href="" onClick="seatSelect3();"><input type="radio" name="seat" value="3"></a>
+      <a id="a4" href="" onClick="seatSelect4();"><input type="radio" name="seat" value="4"></a>
+      <a id="a5" href="" onClick="seatSelect5();"><input type="radio" name="seat" value="5"></a>
+      <a id="a6" href="" onClick="seatSelect6();"><input type="radio" name="seat" value="6"></a>
+      <a id="a7" href="" onClick="seatSelect7();"><input type="radio" name="seat" value="7"></a>
+      <a id="a8" href="" onClick="seatSelect8();"><input type="radio" name="seat" value="8"></a>
+      <a id="a9" href="" onClick="seatSelect9();"><input type="radio" name="seat" value="9"></a>
+      <a id="a10" href="" onClick="seatSelect10();"><input type="radio" name="seat" value="10"></a>
+      </div>
+
+      <button type="submit" name="reservation" value="">この希望で<br>予約する。</button>
+      </form>
+    </div>
+
+    <footer>
+        <nav class="f_nav">
+          <ul>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">RESERVE</a></li>
+            <li><a href="#">RECUIT</a></li>
+            <li><a href="#">TOP</a></li>
+          </ul>
+        </nav>
+        <div class="f_sns">
+          <ul>
+            <li><a href="#"><img src="img/insta.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/FACEBOOK.png" alt=""></a></li>
+          </ul>
+        </div>
+    </footer>
+    <script>
+    const seatMap = document.querySelector(".seat_map");
+    const a1 = document.getElementById("a1");
+    const a2 = document.getElementById("a2");
+    const a3 = document.getElementById("a3");
+    const a4 = document.getElementById("a4");
+    const a5 = document.getElementById("a5");
+    const a6 = document.getElementById("a6");
+    const a7 = document.getElementById("a7");
+    const a8 = document.getElementById("a8");
+    const a9 = document.getElementById("a9");
+    const a10 = document.getElementById("a10");
+
+    function seatSelect1(){
+    seatMap.style.backgroundImage = "url(./img/1.png)";
+    }
+    function seatSelect2(){
+    seatMap.style.backgroundImage = "url(./img/2.png)";
+    }
+    function seatSelect3(){
+    seatMap.style.backgroundImage = "url(./img/3.png)";
+    }
+    function seatSelect4(){
+    seatMap.style.backgroundImage = "url(./img/4.png)";
+    }
+    function seatSelect5(){
+    seatMap.style.backgroundImage = "url(./img/5.png)";
+    }
+    function seatSelect6(){
+    seatMap.style.backgroundImage = "url(./img/6.png)";
+    }
+    function seatSelect7(){
+    seatMap.style.backgroundImage = "url(./img/7.png)";
+    }
+    function seatSelect8(){
+    seatMap.style.backgroundImage = "url(./img/8.png)";
+    }
+    function seatSelect9(){
+    seatMap.style.backgroundImage = "url(./img/9.png)";
+    }
+    function seatSelect10(){
+    seatMap.style.backgroundImage = "url(./img/10.png)";
+    }
+
+    </script>
+
+  </body>
+</html>
